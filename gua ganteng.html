@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CALVIORA IX.C SMP YPI
+    </title>
+	<style>
+		body {
+			font-family: 'Segoe UI', Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background: linear-gradient(135deg, #e0eafc, #cfdef3);
+			min-height: 100vh;
+		}
+		header {
+			background: #2d3a4b;
+			color: #fff;
+			padding: 2rem 1rem 1rem 1rem;
+			text-align: center;
+			letter-spacing: 2px;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+		}
+		.creator {
+			font-size: 1rem;
+			color: #ff9800;
+			margin-top: 0.5rem;
+			letter-spacing: 1px;
+		}
+		.class-structure {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 3rem 0 6rem 0;
+		}
+		.class-box {
+			background: #fff;
+			border-radius: 16px;
+			box-shadow: 0 4px 24px rgba(44,62,80,0.15);
+			padding: 2rem 3rem;
+			min-width: 320px;
+			animation: floatBox 2.5s infinite alternate cubic-bezier(.4,0,.2,1);
+			position: relative;
+		}
+		@keyframes floatBox {
+			0% { transform: translateY(0) scale(1); box-shadow: 0 4px 24px rgba(44,62,80,0.15); }
+			100% { transform: translateY(-18px) scale(1.03); box-shadow: 0 12px 32px rgba(44,62,80,0.18); }
+		}
+		.students {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 1.5rem;
+			gap: 1.2rem;
+		}
+		.student {
+			background: linear-gradient(120deg, #8fd3f4 0%, #84fab0 100%);
+			color: #222;
+			border-radius: 8px;
+			padding: 0.7rem 1.2rem;
+			font-weight: 500;
+			box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+			opacity: 0;
+			transform: translateY(30px) scale(0.95);
+			animation: fadeInUp 0.8s forwards;
+		}
+		.student:nth-child(1) { animation-delay: 0.2s; }
+		.student:nth-child(2) { animation-delay: 0.4s; }
+		.student:nth-child(3) { animation-delay: 0.6s; }
+		.student:nth-child(4) { animation-delay: 0.8s; }
+		.student:nth-child(5) { animation-delay: 1.0s; }
+		.student:nth-child(6) { animation-delay: 1.2s; }
+		.student:nth-child(7) { animation-delay: 1.4s; }
+		.student:nth-child(8) { animation-delay: 1.6s; }
+		.student:nth-child(9) { animation-delay: 1.8s; }
+		.student:nth-child(10) { animation-delay: 2.0s; }
+		@keyframes fadeInUp {
+			to {
+				opacity: 1;
+				transform: translateY(0) scale(1);
+			}
+		}
+		footer {
+			background: #2d3a4b;
+			color: #fff;
+			text-align: center;
+			padding: 1rem;
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+			font-size: 1rem;
+			letter-spacing: 1px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>CALVIORA IX.C SMP YPI</h1>
+		<div class="creator">by AFFAN WEB DEVOLPMENT</div>
+	</header>
+	<section class="class-structure">
+		<div class="class-box">
+			<h2>Struktur Kelas</h2>
+			<div class="students">
+				<div class="student">wakil kelas: arief widha yuono</div>
+                <div class="student">Ketua: vino</div>
+				<div class="student">Wakil: surya</div>
+				<div class="student">Sekretaris: putri</div>
+				<div class="student">Bendahara: nazwa</div>
+				<div class="student">Anggota: faiz rabanni</div>
+				<div class="student">Anggota: bisma</div>
+				<div class="student">Anggota: faiz alghazali</div>
+				<div class="student">Anggota: prima</div>
+				<div class="student">Anggota: saiful afkar</div>
+				<div class="student">Anggota: alkahfi</div>
+                <div class ="student ">Anggota: Affan syahid</div>
+                <div class ="student ">Anggota: 21 siswa lainnya</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		&copy; 2025-2026 CALVIORA IX.C | AFFAN WEB DEVOLPMENT
+	</footer>
+</body>
+</html>
